@@ -23,7 +23,7 @@
  border-radius: 10px;
 }
 
-/*  .logo
+.logo
 {
  width: 120px;
  height: 120px;
@@ -31,12 +31,7 @@
  position: absolute;
  top: -15%;
  left:calc(48% - 50px);
-opacity:1;
 }
-.loginbox logo:hover  {
-  opacity: 0.3;
-}*/
-
 
 h1
 {
@@ -61,7 +56,7 @@ h1
  padding: 15px;
 }
 
-.loginbox input[type="text"], input[type="password"]
+.loginbox input[type="email"], input[type="password"]
 {
  border-color: #696969;
  border-width: 2px;
@@ -93,14 +88,3 @@ h1
  color: #000;
 }
 
-.loginbox a
-{
- text-decoration: none;
- font-size: 18px;
- color: #ffc107;
- }
-
-.loginbox a:hover
-{
- color: yellow;
-}
