@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Booking page</title>
+
+<script type="text/javascript">
+function validate()
+{
+ var pickup=document.getElementById("pickup");
+ var drop=document.getElementById("drop");
+
+ if (pickup.value.trim() =="" )
+ {
+  alert("Pickup location cannot be blank!");
+  return false;
+ }
+else if (drop.value.trim() =="" )
+ {
+  alert("Drop location cannot be blank!");
+  return false;
+ }
+else if (pickup==drop)
+ {
+  alert("Pickup and drop location cannot be same");
+  return false;
+ }
+else
+{
+ return true;
+}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="booking.css">
+<style>
+body{
+
+background-image:url("note1.jpg");
+background-repeat:no-repeat;
+background-size: 70% 100%;
+background-position:center;
+
+}
+</style>
+<body>
+<div class="booking">
+<img src="auto.jpg" class="auto">
+<form onsubmit="return validate()" action="swipeScreen.html">
+<p>Pickup from</p>
+<input type="text" id="pickup" placeholder=" Enter pickup location">
+<p>Where to?</p>
+<input type="text" id="drop" placeholder=" Enter drop location"><br><br>
+<input type="submit" id="" value="Make yourself available"><br>
+
+</form>
+</div>
+</body>
+</head>
+</html>
